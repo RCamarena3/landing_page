@@ -75,6 +75,25 @@ body
     background-color: var(--beige-color);
     color: black;
 }
+.btn-section
+{
+    border: 2px solid var(--blue-color);
+    background-color: var(--blue-color);
+    color: white;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width: 32px;
+    letter-spacing: 8px;
+    border-radius: 20px;
+}
+.btn-section:hover
+{
+    background-color: var(--beige-color);
+    color: black;
+}
 
 /* Navbar  */
 .navbar
@@ -164,9 +183,19 @@ header
   cursor: pointer;
 }
 
+.link-v
+{
+  align-items: center;
+  width: fit-content;
+  padding-bottom: 0.8vmin;
+  color: #34a7c9;
+  cursor: pointer;
+  overflow: hidden;
+}
+
 .second
 {
-  padding: 16vmin 8vmin;
+  padding: 16vmin 20vmin;
   background-color: white;
   text-align: center;
 }
