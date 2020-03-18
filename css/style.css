@@ -1,0 +1,188 @@
+
+:root
+{
+    /* Font Size Styling */
+    --title-size: 50px; /* For titles in section 1 and 2  */
+    --small-title-size: 32px; /* For title in section 3 */
+    --text-size: 20px; /* For navbar text, form field texts and paragraphs in every section */
+    --small-text-size: 14px; /* For footer text and quote section */
+    /* End of Font Size Styling */
+
+    /* Colors Styling */
+    --beige-color: #e8dfdf; /* Sections in beige */
+    --blue-color: #262e4d; /* Sections in blue */
+    /* End of Colors Styling */
+}
+
+*
+{
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: inherit;
+	color: inherit;
+	list-style: inherit;
+	font-size: inherit;
+	font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+body
+{
+  padding-top: 100px;
+	font-size: var(--text-size);
+	color: black;
+	list-style: none;
+	font-family: var(--text-family);
+	font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--beige-color);
+}
+
+.btn
+{
+    border: 2px solid var(--blue-color);
+    background-color: var(--blue-color);
+    color: white;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 32px;
+    border-radius: 20px;
+}
+.btn:hover
+{
+    background-color: var(--beige-color);
+    color: black;
+}
+.btn-started
+{
+    border: 2px solid var(--blue-color);
+    background-color: var(--blue-color);
+    color: white;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width: 32px;
+    letter-spacing: 8px;
+    border-radius: 20px;
+}
+.btn-started:hover
+{
+    background-color: var(--beige-color);
+    color: black;
+}
+
+/* Navbar  */
+.navbar
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 4vmin 8vmin;
+    align-items: center;
+    position: fixed;
+    z-index: 99999;
+    background-color: var(--beige-color);
+    top: 0;
+}
+.nav-logo
+{
+    width: 100px;
+    height: 30px;
+}
+.nav-menu
+{
+    display: flex;
+    margin-left: auto;
+    color: black;
+}
+.nav-menu li
+{
+    padding: 6px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.nav-menu li:hover
+{
+    color: blue;
+}
+.title
+{
+    font-size: var(--title-size);
+    font-weight: 700;
+}
+.subtitle
+{
+    font-size: var(--small-title-size);
+    font-weight: 700;
+}
+
+/* Header */
+header
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 4vmin 8vmin;
+    margin-bottom: 10vmin;
+    background-color: var(--beige-color);
+}
+.header-info
+{
+    width: 50%;
+    padding: 40px 80px 30px 0;
+}
+.header-info .title, .header-info p
+{
+    margin-bottom: 15px;
+}
+.header-img
+{
+    order: 2;
+    width: 50%;
+}
+.link
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    padding-bottom: 0.8vmin;
+    color: var(--blue-color);
+    cursor: pointer;
+    overflow: hidden;
+}
+.link-section
+{
+
+  padding-bottom: 0.8vmin;
+  color: #eda864;
+  cursor: pointer;
+}
+
+.second
+{
+  padding: 16vmin 8vmin;
+  background-color: white;
+  text-align: center;
+}
+
+.column
+{
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
