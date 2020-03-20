@@ -12,7 +12,7 @@
   <body>
     <nav class="navbar">
       <img src="img/logo.svg" alt="Fylo Logo" class="nav-logo">
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="menu">
         <li>
             Why Some text
         </li>
@@ -30,8 +30,20 @@
               Button
             </button>
         </li>
+        <a href="javascript:void(0);" class="ham-icon" onclick="myFunction()">
+          <i class="fas fa-bars"></i>
+        </a>
       </ul>
     </nav>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("menu");
+        if (x.className === "nav-menu") {
+        } else {
+          x.className = "nav-menu";
+        }
+      }
+</script>
     <header>
       <img src="img/box.svg" alt="main.image" class="header-img">
       <div class="header-info">
@@ -77,6 +89,77 @@
         <a href="#" class="link-v">
           <i class="fas fa-dot-circle"></i>Some other info
         </a><br>
+      </section>
+      <section class="diference">
+        <div class="dif-content">
+          <img src="img/people.svg" alt="img-dif" class="img">
+          <h2 class="subtitle-dif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</h2>
+        </div>
+      </section>
+      <section class="second">
+        <a href="#" class="link-section">
+          Some other important info
+        </a><br><br><br>
+        <div class="row">
+          <div class="twoColumns">
+            <img src="img/paper.svg" alt="column-image" width="90%">
+          </div>
+          <div class="twoColumns">
+            <h2 class="subtitle" align="left">Toilets.</h2>
+            <h2 class="subtitle" align="left">There aren't enough of them</h2>
+            <p align="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. More text to fill the line.</p><br>
+            <div align="left">
+              <button class="btn-section" align-items="left">
+                GET INFO
+              </button><br><br>
+            </div>
+            <div align="left">
+              <a href="#" class="link-v">
+                Some other important info
+              </a><br><br><br>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="row">
+          <div class="column-footer">
+            <p class="footer-title">Reel</p><br>
+            <div class="footer-links">
+              <p>Look, another link</p><br>
+              <p>Another link</p><br>
+              <p>A link</p><br>
+            </div>
+          </div>
+          <div class="column-footer">
+            <br><br>
+            <div class="footer-links">
+              <p>Other link</p><br>
+              <p>Last link</p>
+            </div>
+          </div>
+          <div class="column-footer">
+            <p class="footer-title">Follow Us</p><br>
+            <div class="footer-links-social">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+          </div>
+          <div class="column-form">
+            <p class="footer-title">Sign up for more info</p><br>
+            <form>
+              <input type="text" id="mail" name="email" placeholder="Your email..">
+            </form>
+          </div><br><br>
+          <div class="column-footer-btn">
+            <button class="btn-form">
+            SIGN UP
+          </button>
+
+          </div>
+        </div>
 
       </section>
     </main>

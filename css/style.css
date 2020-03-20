@@ -14,6 +14,25 @@
     /* End of Colors Styling */
 }
 
+@media only screen and (max-width: 900px), (orientation: portrait)
+{
+    :root
+    {
+      --title-size: 25px;
+      --small-text-size: 20px;
+      --text-size: 10px;
+      --small-title-size: 5px;
+
+    }
+    body
+    {
+        padding-top: 20vmin;
+    }
+
+}
+
+
+
 *
 {
   margin: 0;
@@ -95,6 +114,28 @@ body
     color: black;
 }
 
+.btn-form
+{
+    border: 2px solid white;
+    background-color: white;
+    color: var(--blue-color);
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    min-width: 32px;
+    letter-spacing: 5px;
+    border-radius: 20px;
+}
+.btn-form:hover
+{
+    background-color: var(--blue-color);
+    color: white;
+}
+
+
+
 /* Navbar  */
 .navbar
 {
@@ -127,7 +168,43 @@ body
 }
 .nav-menu li:hover
 {
-    color: blue;
+    color: grey;
+}
+
+.ham-icon
+{
+  display: none;
+}
+
+@media only screen and (max-width: 900px), (orientation: portrait)
+{
+    .navbar
+    {
+        display: block;
+    }
+    .nav-brand
+    {
+        display: block;
+        margin: 0 auto;
+    }
+    .nav-menu
+    {
+        display: none;
+        margin-top: 4vmin;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .ham-icon
+    {
+      float: right;
+      display: block;
+    }
+
+    p
+    {
+      font-size: 10px;
+    }
 }
 .title
 {
@@ -138,6 +215,40 @@ body
 {
     font-size: var(--small-title-size);
     font-weight: 700;
+}
+.subtitle-dif
+{
+    font-size: var(--small-title-size);
+    font-weight: 700;
+    color: white;
+}
+.image
+{
+  width: 50%;
+  height: 50%;
+}
+.footer-title
+{
+  letter-spacing: 1.2px;
+  font-size: 20px;
+  color: grey;
+}
+
+
+.footer-links
+{
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-links-social
+{
+  justify-content: space-between;
+  display: flex;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
 }
 
 /* Header */
@@ -163,6 +274,14 @@ header
 {
     order: 2;
     width: 50%;
+}
+
+.img
+{
+  position: absolute;
+  align: center;
+  width: 130%;
+  height: 150%;
 }
 .link
 {
@@ -195,9 +314,53 @@ header
 
 .second
 {
-  padding: 16vmin 20vmin;
+  padding-top: 20vmin;
+  padding-bottom: 40vmin;
+  padding-left: 20vmin;
+  padding-right: 20vmin;
   background-color: white;
   text-align: center;
+}
+
+.diference
+{
+  position: relative;
+  width: 100%;
+  height: 50vmin;
+  background-color: var(--blue-color);
+  text-align: center;
+}
+
+.dif-content
+{
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  height: 60vmin;
+  width: 45vmin;
+  left: 50%;
+  top: -5vmin;
+  transform: translateX(-50%);
+}
+
+.footer
+{
+  width: 100%;
+  padding-top: 5vmin;
+  padding-bottom: 10vmin;
+  padding-left: 5vmin;
+  background-color: var(--blue-color);
+}
+
+.img:after
+{
+
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .column
@@ -205,7 +368,34 @@ header
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+}
+.column-footer
+{
+  float: left;
+  width: 17%;
+  padding: 10px;
+}
+
+.column-footer-btn
+{
+  float: right;
+  width: 19%;
+  padding: 10px;
+}
+
+.column-form
+{
+  float: left;
+  width: 18%;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+.twoColumns
+{
+  float: left;
+  width: 50%;
+  padding: 10px;
 }
 
 /* Clear floats after the columns */
@@ -214,4 +404,14 @@ header
   content: "";
   display: table;
   clear: both;
+}
+
+input[type=text], select {
+  width: 130%;
+  padding-bottom: 10px;
+  display: inline-block;
+  background-color: transparent;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: grey
 }
