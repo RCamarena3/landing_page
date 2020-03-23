@@ -30,20 +30,21 @@
               Button
             </button>
         </li>
-        <a href="javascript:void(0);" class="ham-icon" onclick="myFunction()">
+        <span class="ham-icon" id="icon">
           <i class="fas fa-bars"></i>
-        </a>
+        </span>
       </ul>
     </nav>
     <script>
-      function myFunction() {
-        var x = document.getElementById("menu");
-        if (x.className === "nav-menu") {
-        } else {
-          x.className = "nav-menu";
-        }
+      function classToggle() {
+        const navs = document.querySelectorAll('.nav-menu')
+
+        navs.forEach(nav => nav.classList.toggle('.ham-show'));
       }
-</script>
+
+      document.querySelector('.ham-icon')
+      .addEventListener('click', classToggle);
+    </script>
     <header>
       <img src="img/box.svg" alt="main.image" class="header-img">
       <div class="header-info">
